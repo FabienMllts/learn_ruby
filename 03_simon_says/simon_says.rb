@@ -49,7 +49,7 @@ def titleize(welcome)
 	# Stock the little words expected
 	little_words = ["the", "and", "over"]
 	final_word = welcome.split(" ")
-#creation de loops with the ! variable modified
+#creation de loops with the ! variable modified if little_words is include in word
 	final_word.each do |word|
 		word.capitalize! if !little_words.include?(word)
 	end
