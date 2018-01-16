@@ -18,10 +18,11 @@ def sum(numbers)
 	 return total
 end
 
-=begin
+# BONUS
+
 def multiply(numbers)
-	total = 1
-	numbers.each { |number| total *= number }
+	total = 0
+	numbers.each { |number| total *= numbers }
 	return total
 end
 
@@ -35,4 +36,4 @@ def factorial(number_to_facto)
 	(1..number_to_facto).select {|number| total *= number}
 	return total
 end
-=end
+
